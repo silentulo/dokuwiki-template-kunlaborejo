@@ -44,7 +44,8 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
 
     <?php html_msgarea()?>
 
-    <div id="header">
+  <div id="header">
+    <div class="site">
       <div id="logo">
         <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
       </div>
@@ -57,26 +58,33 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
         </div>
       <?php }?>
     </div>
+  </div>
     
-    <div id="mainmenu">
+  <div id="mainmenu">
+    <div class="site">
     	Place for menu
-    </div>
-    <div id="submenu">
+	</div>
+  </div>
+  <div id="submenu">
+    <div class="site">
     	Place for submenu
     </div>
+  </div>
     
-    <?php if(tpl_getConf('trace')) {?> 
-      <div id="breadcrumbs">
+  <?php if(tpl_getConf('trace')) {?> 
+    <div id="breadcrumbs">
+      <div class="site">  
         <?php ($conf['youarehere'] != 1) ? tpl_breadcrumbs() : tpl_youarehere();?>
       </div>
-    <?php } ?>
+    </div>
+  <?php } ?>
 
     <?php /*old includehook*/ @include(dirname(__FILE__).'/header.html')?>
     <?php /*old includehook*/ @include(dirname(__FILE__).'/pageheader.html')?>
 
     <?php flush()?>
-
-    <?php if(!tpl_sidebar_hide()) { ?>
+    
+    <div class="site">
       <div id="left_sidebar">
         <?php if(tpl_getConf('search') == 'left') tpl_searchform() ?>
         <?php tpl_sidebar('left') ?>
@@ -88,24 +96,27 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
         <?php if(tpl_getConf('search') == 'right') tpl_searchform() ?>
         <?php tpl_sidebar('right') ?>
       </div>
-    <?php }?>
-
+    </div>
 </div>
 
 <?php flush()?>
 
 <div id="footer">
-  <div id="page_meta" class="meta">
-      <?php tpl_pageinfo()?>
+  <div class="site">
+    <div id="page_meta" class="meta">
+        <?php tpl_pageinfo()?>
+    </div>
   </div>
   <div id="footer_info">
-    <?php tpl_license('button', true)?>
-    <a target="_blank" href="http://www.chimeric.de" title="www.chimeric.de"><img src="<?php echo DOKU_TPL?>images/button-chimeric-de.png" width="80" height="15" alt="www.chimeric.de" border="0" /></a>
-    <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer" title="Valid CSS"><img src="<?php echo DOKU_TPL?>images/button-css.png" width="80" height="15" alt="Valid CSS" border="0" /></a>
-    <a target="_blank" href="http://wiki.splitbrain.org/wiki:dokuwiki" title="Driven by DokuWiki"><img src="<?php echo DOKU_TPL?>images/button-dw.png" width="80" height="15" alt="Driven by DokuWiki" border="0" /></a>
-    <a target="_blank" href="http://www.firefox-browser.de" title="do yourself a favour and use a real browser - get firefox"><img src="<?php echo DOKU_TPL?>images/button-firefox.png" width="80" height="15" alt="do yourself a favour and use a real browser - get firefox!!" border="0" /></a>
-    <a target="_blank" href="<?php echo DOKU_BASE?>feed.php" title="Recent changes RSS feed"><img src="<?php echo DOKU_TPL?>images/button-rss.png" width="80" height="15" alt="Recent changes RSS feed" border="0" /></a>
-    <a target="_blank" href="http://validator.w3.org/check/referer" title="Valid XHTML 1.0"><img src="<?php echo DOKU_TPL?>images/button-xhtml.png" width="80" height="15" alt="Valid XHTML 1.0" border="0" /></a>
+    <div class="site">
+      <?php tpl_license('button', true)?>
+      <a target="_blank" href="http://www.chimeric.de" title="www.chimeric.de"><img src="<?php echo DOKU_TPL?>images/button-chimeric-de.png" width="80" height="15" alt="www.chimeric.de" border="0" /></a>
+      <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer" title="Valid CSS"><img src="<?php echo DOKU_TPL?>images/button-css.png" width="80" height="15" alt="Valid CSS" border="0" /></a>
+      <a target="_blank" href="http://wiki.splitbrain.org/wiki:dokuwiki" title="Driven by DokuWiki"><img src="<?php echo DOKU_TPL?>images/button-dw.png" width="80" height="15" alt="Driven by DokuWiki" border="0" /></a>
+      <a target="_blank" href="http://www.firefox-browser.de" title="do yourself a favour and use a real browser - get firefox"><img src="<?php echo DOKU_TPL?>images/button-firefox.png" width="80" height="15" alt="do yourself a favour and use a real browser - get firefox!!" border="0" /></a>
+      <a target="_blank" href="<?php echo DOKU_BASE?>feed.php" title="Recent changes RSS feed"><img src="<?php echo DOKU_TPL?>images/button-rss.png" width="80" height="15" alt="Recent changes RSS feed" border="0" /></a>
+      <a target="_blank" href="http://validator.w3.org/check/referer" title="Valid XHTML 1.0"><img src="<?php echo DOKU_TPL?>images/button-xhtml.png" width="80" height="15" alt="Valid XHTML 1.0" border="0" /></a>
+    </div>
   </div>
 </div>
 

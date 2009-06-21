@@ -23,10 +23,14 @@ html, body {
 	padding-bottom: 4em;
 }
 
+.site {
+	padding: 0em 2em;
+}
+
 /* -------------- header -------------------*/
 #header {
 	height: 4.2em;
-	padding: 0.5em 4em;
+	padding: 0.5em 0em;
 }
 
 #logo {
