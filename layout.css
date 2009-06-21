@@ -15,11 +15,11 @@ html, body {
 #dokuwiki {
 	height: auto !important;
 	min-height: 100%;
-	margin: 0pt auto -4.2em;
+	margin: 0pt auto -6.2em;
 }
 
 .push {
-	height: 4.2em;
+	height: 6.2em;
 	padding-bottom: 4em;
 }
 
@@ -71,7 +71,10 @@ html, body {
 
 /* --------------- footer ------------------*/
 #footer {
-	height: 4.2em;
+	height: 6.2em;
 	overflow: hidden;
 }
 
+#footer_info {
+	height: 100%;
+}
