@@ -74,6 +74,9 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
       </div>
       <div id="page">
         <?php ($notoc) ? tpl_content(false) : tpl_content() ?>
+        <div class="meta" id="page_meta">
+          <?php tpl_pageinfo()?>
+        </div>
       </div>
       <div id="right_sidebar">
         <?php if(tpl_getConf('search') == 'right') tpl_searchform() ?>
@@ -81,12 +84,6 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
       </div>
     <?php }?>
 
-  <div id="meta">
-    <div id="meta_doc">
-      <?php tpl_pageinfo()?>
-    </div>
-  </div>
-  <div class="push"> </div>
 </div>
 
 <?php flush()?>
