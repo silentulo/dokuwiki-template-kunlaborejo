@@ -64,6 +64,10 @@ html, body {
   border: 1px solid;
 }
 
+#page_meta {
+	margin-top: 2em;
+}
+
 
 /* --------------- footer ------------------*/
 #footer {

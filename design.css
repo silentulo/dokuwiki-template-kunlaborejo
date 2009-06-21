@@ -17,11 +17,23 @@ body * {
 	line-height: 1.4em;
 }
 
+.meta {
+  font-size: 70%;
+  color: #66A;
+}
+
+/* ------------- header ---------------------------*/
+#header {
+	background: #FAFAFA;
+}
+
+
+#page_meta {
+  text-align: right;
+}
+
+/* ------------ footer ----------------------------*/
 #footer {
 	background: #BBCCD9;
 	color #CADCEA;
-}
-
-#header {
-	background: #FCFCFC;
 }
