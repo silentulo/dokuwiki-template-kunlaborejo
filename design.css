@@ -19,7 +19,8 @@ body * {
 
 .meta {
   font-size: 70%;
-  color: #66A;
+  background-color: __background_meta__;
+  color: __text_meta__;
 }
 
 #breadcrumbs {
