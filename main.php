@@ -48,9 +48,11 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
       <div id="logo">
         <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
       </div>
-      <div id="searchtool">
-      </div>
       <div id="userinfo">
+      	Place for user info
+      </div>
+      <div id="searchtool">
+      	Place for search tool
       </div>
     </div>
     

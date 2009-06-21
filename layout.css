@@ -31,4 +31,19 @@ html, body {
 /* -------------- header -------------------*/
 #header {
 	height: 4.2em;
+	padding: 0.5em 4em;
+}
+
+#logo {
+	float: left;
+}
+
+#searchtool {
+	float: right;
+	margin-right: 5em;
+}
+
+#userinfo {
+	float: right;
+	min-width: 20em;
 }
