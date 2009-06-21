@@ -46,21 +46,21 @@ html, body {
 /* --------------- body --------------------*/
 #left_sidebar {
   float: left;
-  width: 20%;
+  width: __left_sidebar_width__;
   border: 1px solid;
 }
 
 #right_sidebar {
   float: right;
-  width: 20%;
+  width: __right_sidebar_width__;
   border: 1px solid;
 }
 
 #page {
   text-align: justify;
   float: left;
-  width: 55%;
-  margin: 0em 2%;
+  width: __page_width__;
+  margin: 0em __page_margin__;
   border: 1px solid;
 }
 

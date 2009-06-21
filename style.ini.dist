@@ -19,6 +19,11 @@ design.css         = screen
 ; the stylesheets. Changing this file is the simplest method to
 ; give your wiki a new look.
 [replacements]
-; empty for a while
+
+; widths for main body part
+__left_sidebar_width__=15%
+__page_width__=65%
+__page_margin__=2%
+__right_sidebar_width__=15%
 
 ; setup vim: ts=2 sw=2:
