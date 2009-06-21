@@ -45,7 +45,9 @@ html, body {
 
 #userinfo {
 	float: right;
-	min-width: 20em;
+	padding: 0.5em;
+	min-width: 25em;
+	height: 2.6em;
 }
 
 #breadcrumbs {
