@@ -44,18 +44,18 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
 
     <?php html_msgarea()?>
 
-    <div class="header">
-      <div class="logo">
+    <div id="header">
+      <div id="logo">
         <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
       </div>
-      <div class="searchtool">
+      <div id="searchtool">
       </div>
-      <div class="userinfo">
+      <div id="userinfo">
       </div>
     </div>
     
     <?php if(tpl_getConf('trace')) {?> 
-      <div class="breadcrumbs">
+      <div id="breadcrumbs">
         <?php ($conf['youarehere'] != 1) ? tpl_breadcrumbs() : tpl_youarehere();?>
       </div>
     <?php } ?>
@@ -66,21 +66,21 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
     <?php flush()?>
 
     <?php if(!tpl_sidebar_hide()) { ?>
-      <div class="left_sidebar">
+      <div id="left_sidebar">
         <?php if(tpl_getConf('search') == 'left') tpl_searchform() ?>
         <?php tpl_sidebar('left') ?>
       </div>
-      <div class="page">
+      <div id="page">
         <?php ($notoc) ? tpl_content(false) : tpl_content() ?>
       </div>
-      <div class="right_sidebar">
+      <div id="right_sidebar">
         <?php if(tpl_getConf('search') == 'right') tpl_searchform() ?>
         <?php tpl_sidebar('right') ?>
       </div>
     <?php }?>
 
-  <div class="meta">
-    <div class="doc">
+  <div id="meta">
+    <div id="meta_doc">
       <?php tpl_pageinfo()?>
     </div>
   </div>
