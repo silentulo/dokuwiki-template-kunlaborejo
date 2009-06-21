@@ -48,7 +48,9 @@ html, body {
 }
 
 #breadcrumbs {
+	margin-bottom: 1.4em;
 }
+
 /* --------------- menu --------------------*/
 #mainmenu {
 	height: 2em;
