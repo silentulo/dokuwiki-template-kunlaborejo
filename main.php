@@ -97,6 +97,8 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
         <?php tpl_sidebar('right') ?>
       </div>
     </div>
+
+  <div class="push"> </div>
 </div>
 
 <?php flush()?>

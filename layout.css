@@ -19,6 +19,7 @@ html, body {
 }
 
 .push {
+	clear: both;
 	height: 6.2em;
 	padding-bottom: 4em;
 }
@@ -74,10 +75,9 @@ html, body {
 }
 
 #page {
-  text-align: justify;
   float: left;
   width: __page_width__;
-  margin: 0em __page_margin__;
+  margin-left: __page_margin__;
   border: 1px solid;
 }
 
