@@ -58,6 +58,13 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
       <?php }?>
     </div>
     
+    <div id="mainmenu">
+    	Place for menu
+    </div>
+    <div id="submenu">
+    	Place for submenu
+    </div>
+    
     <?php if(tpl_getConf('trace')) {?> 
       <div id="breadcrumbs">
         <?php ($conf['youarehere'] != 1) ? tpl_breadcrumbs() : tpl_youarehere();?>
