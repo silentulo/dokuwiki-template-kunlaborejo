@@ -23,11 +23,6 @@ html, body {
 	padding-bottom: 4em;
 }
 
-#footer {
-	height: 4.2em;
-	overflow: hidden;
-}
-
 /* -------------- header -------------------*/
 #header {
 	height: 4.2em;
@@ -47,3 +42,32 @@ html, body {
 	float: right;
 	min-width: 20em;
 }
+
+/* --------------- body --------------------*/
+#left_sidebar {
+  float: left;
+  width: 20%;
+  border: 1px solid;
+}
+
+#right_sidebar {
+  float: right;
+  width: 20%;
+  border: 1px solid;
+}
+
+#page {
+  text-align: justify;
+  float: left;
+  width: 55%;
+  margin: 0em 2%;
+  border: 1px solid;
+}
+
+
+/* --------------- footer ------------------*/
+#footer {
+	height: 4.2em;
+	overflow: hidden;
+}
+
