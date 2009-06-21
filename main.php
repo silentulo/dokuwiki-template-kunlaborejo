@@ -79,18 +79,17 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
       </div>
     <?php }?>
 
-
-  </div>
-</div>
-
-<?php flush()?>
-
-<div align="center" class="footer">
   <div class="meta">
     <div class="doc">
       <?php tpl_pageinfo()?>
     </div>
   </div>
+  <div class="push"> </div>
+</div>
+
+<?php flush()?>
+
+<div id="footer">
   <?php tpl_license('button', true)?>
   <a target="_blank" href="http://www.chimeric.de" title="www.chimeric.de"><img src="<?php echo DOKU_TPL?>images/button-chimeric-de.png" width="80" height="15" alt="www.chimeric.de" border="0" /></a>
   <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer" title="Valid CSS"><img src="<?php echo DOKU_TPL?>images/button-css.png" width="80" height="15" alt="Valid CSS" border="0" /></a>

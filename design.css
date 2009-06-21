@@ -1,0 +1,23 @@
+/**
+ * Design elements for kunlaborejo template
+ *
+ * @author Artem <silentulo cxe gmail.com>
+ */
+
+/* -------------- general elements --------------- */
+
+body {
+  font: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: white;
+  color: black;
+}
+
+body * { 
+	line-height: 1.4em;
+}
+
+#footer {
+	background: #BBCCD9;
+	color #CADCEA;
+}

@@ -1,0 +1,30 @@
+/**
+ * Design elements for kunlaborejo template
+ *
+ * @author Artem <silentulo cxe gmail.com>
+ */
+
+/* -------------- general elements --------------- */
+
+* { padding: 0; margin: 0; }
+
+html, body {
+	height: 100%;
+}
+
+#dokuwiki {
+	height: auto !important;
+	min-height: 100%;
+	margin: 0pt auto -4.2em;
+}
+
+.push {
+	height: 4.2em;
+	padding-bottom: 4em;
+}
+
+#footer {
+	height: 4.2em;
+	overflow: hidden;
+}
+
