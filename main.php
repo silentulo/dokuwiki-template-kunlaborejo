@@ -40,7 +40,7 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
 </head>
 <body>
 <?php /*old includehook*/ @include(dirname(__FILE__).'/topheader.html')?>
-<div id="wrapper">
+<div id="dokuwiki">
 
     <?php html_msgarea()?>
 
