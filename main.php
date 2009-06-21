@@ -41,208 +41,56 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
 <body>
 <?php /*old includehook*/ @include(dirname(__FILE__).'/topheader.html')?>
 <div id="wrapper">
-  <div class="dokuwiki">
 
     <?php html_msgarea()?>
 
-    <div class="stylehead">
-      <div class="header">
-        <div class="pagename">
-          [[<?php tpl_link(wl($ID,'do=backlink'),tpl_pagetitle($ID,true))?>]]
-        </div>
-        <div class="logo">
-          <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
-        </div>
+    <div class="header">
+      <div class="logo">
+        <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
       </div>
+      <div class="searchtool">
+      </div>
+      <div class="userinfo">
+      </div>
+    </div>
     
-      <?php if(tpl_getConf('trace')) {?> 
+    <?php if(tpl_getConf('trace')) {?> 
       <div class="breadcrumbs">
         <?php ($conf['youarehere'] != 1) ? tpl_breadcrumbs() : tpl_youarehere();?>
       </div>
-      <?php } ?>
-
-      <?php /*old includehook*/ @include(dirname(__FILE__).'/header.html')?>
-      </div>
-
-      <?php if(!$toolb) {?>
-      <div class="bar" id="bar__top">
-        <div class="bar-left">
-          <?php 
-            if(!tpl_getConf('closedwiki') || (tpl_getConf('closedwiki') && isset($_SERVER['REMOTE_USER']))) {
-                switch(tpl_getConf('wiki_actionlinks')) {
-                  case('buttons'):
-                    // check if new page button plugin is available
-                    if(!plugin_isdisabled('npd') && ($npd =& plugin_load('helper', 'npd'))) {
-                      $npd->html_new_page_button();
-                    }
-                    tpl_button('edit');
-                    tpl_button('history');     
-                    break;
-                  case('links'):
-                    // check if new page button plugin is available
-                    if(!plugin_isdisabled('npd') && ($npd =& plugin_load('helper', 'npd'))) {
-                      $npd->html_new_page_button();
-                    }
-                    tpl_actionlink('edit');
-                    tpl_actionlink('history');
-                    break;
-                } 
-            }
-          ?>
-        </div>
-        <div class="bar-right">
-          <?php
-            switch(tpl_getConf('wiki_actionlinks')) {
-              case('buttons'):
-                if(!tpl_getConf('closedwiki') || (tpl_getConf('closedwiki') && isset($_SERVER['REMOTE_USER']))) {
-                  tpl_button('admin');
-                  tpl_button('profile');
-                  tpl_button('recent');
-                  tpl_button('index');
-                  tpl_button('login');
-                  if(tpl_getConf('sidebar') == 'none') tpl_searchform();
-                } else {
-                  tpl_button('login');
-                }
-                break;
-              case('links'):
-                if(!tpl_getConf('closedwiki') || (tpl_getConf('closedwiki') && isset($_SERVER['REMOTE_USER']))) {
-                  tpl_actionlink('admin');
-                  tpl_actionlink('profile');
-                  tpl_actionlink('recent');
-                  tpl_actionlink('index');
-                  tpl_actionlink('login');
-                  if(tpl_getConf('sidebar') == 'none') tpl_searchform();
-                } else {
-                  tpl_actionlink('login');
-                }
-                break;
-            }
-          ?>
-        </div>
-    </div>
     <?php } ?>
 
+    <?php /*old includehook*/ @include(dirname(__FILE__).'/header.html')?>
     <?php /*old includehook*/ @include(dirname(__FILE__).'/pageheader.html')?>
 
     <?php flush()?>
 
-    <?php if(tpl_getConf('sidebar') == 'left') { ?>
-
-      <?php if(!tpl_sidebar_hide()) { ?>
-        <div class="left_sidebar">
-          <?php tpl_searchform() ?>
-          <?php tpl_sidebar('left') ?>
-        </div>
-        <div class="right_page">
-          <?php ($notoc) ? tpl_content(false) : tpl_content() ?>
-        </div>
-      <?php } else { ?>
-        <div class="page">
-          <?php tpl_content()?> 
-        </div> 
-      <?php } ?>
-
-    <?php } elseif(tpl_getConf('sidebar') == 'right') { ?>
-
-      <?php if(!tpl_sidebar_hide()) { ?>
-        <div class="left_page">
-          <?php ($notoc) ? tpl_content(false) : tpl_content() ?>
-        </div>
-        <div class="right_sidebar">
-          <?php tpl_searchform() ?>
-          <?php tpl_sidebar('right') ?>
-        </div>
-      <?php } else { ?>
-        <div class="page">
-          <?php tpl_content() ?> 
-        </div> 
-      <?php }?>
-
-    <?php } elseif(tpl_getConf('sidebar') == 'both') { ?>
-
-      <?php if(!tpl_sidebar_hide()) { ?>
-        <div class="left_sidebar">
-          <?php if(tpl_getConf('search') == 'left') tpl_searchform() ?>
-          <?php tpl_sidebar('left') ?>
-        </div>
-        <div class="center_page">
-          <?php ($notoc) ? tpl_content(false) : tpl_content() ?>
-        </div>
-        <div class="right_sidebar">
-          <?php if(tpl_getConf('search') == 'right') tpl_searchform() ?>
-          <?php tpl_sidebar('right') ?>
-        </div>
-      <?php } else { ?>
-        <div class="page">
-          <?php tpl_content()?> 
-        </div> 
-      <?php }?>
-
-    <?php } elseif(tpl_getConf('sidebar') == 'none') { ?>
+    <?php if(!tpl_sidebar_hide()) { ?>
+      <div class="left_sidebar">
+        <?php if(tpl_getConf('search') == 'left') tpl_searchform() ?>
+        <?php tpl_sidebar('left') ?>
+      </div>
       <div class="page">
-        <?php tpl_content() ?>
+        <?php ($notoc) ? tpl_content(false) : tpl_content() ?>
       </div>
-    <?php } ?>
-
-      <div class="stylefoot">
-        <div class="meta">
-          <div class="user">
-          <?php tpl_userinfo()?>
-          </div>
-          <div class="doc">
-          <?php tpl_pageinfo()?>
-          </div>
-        </div>
+      <div class="right_sidebar">
+        <?php if(tpl_getConf('search') == 'right') tpl_searchform() ?>
+        <?php tpl_sidebar('right') ?>
       </div>
+    <?php }?>
 
-    <div class="clearer"></div>
-
-    <?php flush()?>
-
-    <?php if(!$toolb) {?>
-    <?php   if(!tpl_getConf('closedwiki') || (tpl_getConf('closedwiki') && isset($_SERVER['REMOTE_USER']))) { ?>
-    <div class="bar" id="bar__bottom">
-      <div class="bar-left">
-        <?php 
-          switch(tpl_getConf('wiki_actionlinks')) {
-            case('buttons'):
-                tpl_button('edit');
-                tpl_button('history');
-              break;
-            case('links'):
-                tpl_actionlink('edit');
-                tpl_actionlink('history');
-              break;
-          }
-        ?>
-      </div>
-      <div class="bar-right">
-        <?php 
-          switch(tpl_getConf('wiki_actionlinks')) {
-            case('buttons'):
-                tpl_button('subscription');
-                tpl_button('top');
-              break;
-            case('links'):
-                tpl_actionlink('subscribe');
-                tpl_actionlink('subscribens');
-                tpl_actionlink('top');
-              break;
-          }
-        ?>
-      </div>
-    </div>
-    <div class="clearer"></div>
-    <?php   } ?>
-    <?php } ?>
-
-    <?php /*old includehook*/ @include(dirname(__FILE__).'/footer.html')?>
 
   </div>
 </div>
 
-<div align="center" class="footerinc">
+<?php flush()?>
+
+<div align="center" class="footer">
+  <div class="meta">
+    <div class="doc">
+      <?php tpl_pageinfo()?>
+    </div>
+  </div>
   <?php tpl_license('button', true)?>
   <a target="_blank" href="http://www.chimeric.de" title="www.chimeric.de"><img src="<?php echo DOKU_TPL?>images/button-chimeric-de.png" width="80" height="15" alt="www.chimeric.de" border="0" /></a>
   <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer" title="Valid CSS"><img src="<?php echo DOKU_TPL?>images/button-css.png" width="80" height="15" alt="Valid CSS" border="0" /></a>
