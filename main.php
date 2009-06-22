@@ -62,9 +62,10 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
            </div>
         <?php }?>
         <ul>
-            <li class="active"> <a href="/wiki/">Unu</a>  </li>
-            <li> <a href="/wiki/">Du</a> </li>
-            <li> <a href="/wiki/">Tri</a> </li>
+            <li class="active"> <a href="/wiki/">Pri ni</a>  </li>
+            <li> <a href="/wiki/">Projektoj</a> </li>
+            <li> <a href="/wiki/">Kluboj</a> </li>
+            <li> <a href="/wiki/">Membrejo</a> </li>
         </ul>
       </div>
 
