@@ -54,17 +54,17 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
       <div id="userinfo">
       	Place for user info
       </div>
-      <?php if(tpl_getConf('search') == 'top') { ?>
-        <div id="searchtool">
-          <?php if(tpl_getConf('search') == 'top') tpl_searchform() ?>
-        </div>
-      <?php }?>
     </div>
   </div>
     
   <div id="mainmenu">
     <div class="site">
-    	Place for menu
+      <?php if(tpl_getConf('search') == 'menu') { ?>
+        <div id="searchtool">
+          <?php tpl_searchform() ?>
+        </div>
+      <?php }?>
+      Place for menu
 	</div>
   </div>
   <div id="submenu">

@@ -38,10 +38,6 @@ html, body {
 	float: left;
 }
 
-#searchtool {
-	float: right;
-	margin-right: 5em;
-}
 
 #userinfo {
 	float: right;
@@ -57,6 +53,10 @@ html, body {
 /* --------------- menu --------------------*/
 #mainmenu {
 	height: 2em;
+}
+
+#searchtool {
+	float: right;
 }
 
 #submenu {
