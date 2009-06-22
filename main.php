@@ -47,7 +47,9 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
   <div id="header">
     <div class="site">
       <div id="logo">
-        <?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" accesskey="h" title="[ALT+H]"')?>
+        <?php tpl_link(wl(),
+                       '<img src="' . DOKU_TPL . 'images/logo-2.png">',
+                       'name="dokuwiki__top" accesskey="h" title="'.$conf['title'].'"')?>
       </div>
       <div id="userinfo">
       	Place for user info
