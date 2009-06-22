@@ -30,10 +30,9 @@ __right_sidebar_width__=15%
 
 ;-------------------------------------
 ; colors
+__background_body__ = "#fbfbfb"
 __text_neu__       = "#666"
-__background_neu__ = "white"
 __text_meta__       = "#558"
-__background_meta__ = "white"
 
 
 ; setup vim: ts=2 sw=2:

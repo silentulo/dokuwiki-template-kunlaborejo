@@ -9,7 +9,7 @@
 body {
   font: 0.8em "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  background-color: white;
+  background-color: __background_body__;
   color: black;
 }
 
@@ -23,12 +23,12 @@ body * {
 
 .meta {
   font-size: 70%;
-  background-color: __background_meta__;
+  background-color: __background_body__;
   color: __text_meta__;
 }
 
 #breadcrumbs {
-  background-color: __background_neu__;
+  background-color: __background_body__;
   color: __text_neu__;
   font-size: 80%;
   padding: 0 0 0 4px;
@@ -36,7 +36,7 @@ body * {
 
 /* ------------- header ---------------------------*/
 #header {
-	background: #EEE;
+	background: #e1e1e1 url(images/menu-bg.png) repeat-x;
 }
 
 #userinfo {
@@ -48,11 +48,10 @@ body * {
 
 /* ------------- menu -----------------------------*/
 #mainmenu {
-	background: #EEE;
 }
 
 #submenu {
-	background: #DDD;
+	background: #CCC;
 	color: black;
 }
 
