@@ -60,7 +60,7 @@ html, body {
 }
 
 #submenu {
-	padding: 0.1em 0em;
+	padding: 0.2em 0em;
 }
 
 /* --------------- body --------------------*/
@@ -96,4 +96,5 @@ html, body {
 
 #footer_info {
 	height: 100%;
+	padding: 1em;
 }
