@@ -53,8 +53,20 @@ html, body {
 /* --------------- menu --------------------*/
 #mainmenu {
 	clear: both;
-	padding-top: 0.5em;
+	padding-top: 1.2em;
 	height: 2em;
+}
+
+#mainmenu li {
+    float: left;
+    position: relative;
+    list-style-type: none;
+    height: 1.8em;
+    margin-right: 0.2em;
+}
+
+#mainmenu a {
+	padding: 0em 2em;
 }
 
 #searchtool {

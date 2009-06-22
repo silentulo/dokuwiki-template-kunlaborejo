@@ -47,7 +47,29 @@ body * {
 }
 
 /* ------------- menu -----------------------------*/
-#mainmenu {
+#mainmenu ul {
+	background: __background_body__;
+}
+
+#mainmenu li {
+	border-top: 0.4em solid #AAA;
+	border-left: 0.2em solid #CCC;
+	border-right: 0.2em solid #CCC;
+	-moz-border-radius: 0.6em 0.6em 0 0;
+}
+
+#mainmenu li.active {
+	border-top-color: #995;
+}
+
+#mainmenu a {
+	font-size: 110%;
+	text-decoration: none;
+	color: black;
+}
+
+#mainmenu a:hover {
+	background: #EEE;
 }
 
 #submenu {

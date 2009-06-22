@@ -62,7 +62,9 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
            </div>
         <?php }?>
         <ul>
-          Place for main menu
+            <li class="active"> <a href="/wiki/">Unu</a>  </li>
+            <li> <a href="/wiki/">Du</a> </li>
+            <li> <a href="/wiki/">Tri</a> </li>
         </ul>
       </div>
 
