@@ -52,7 +52,7 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
                        'name="dokuwiki__top" accesskey="h" title="'.$conf['title'].'"')?>
       </div>
       <div id="userinfo">
-      	Place for user info
+      	Eniru: <form> <input /> <input /> <submit value="Ek"/> </form>
       </div>
 
       <div id="mainmenu">
