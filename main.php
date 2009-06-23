@@ -55,26 +55,34 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
       	Eniru: <form> <input /> <input /> <submit value="Ek"/> </form>
       </div>
 
-      <div id="mainmenu">
-        <?php if(tpl_getConf('search') == 'menu') { ?>
-           <div id="searchtool">
-             <?php tpl_searchform() ?>
-           </div>
-        <?php }?>
-        <ul>
-            <li class="active"> <a href="/wiki/">Pri ni</a>  </li>
-            <li> <a href="/wiki/">Projektoj</a> </li>
-            <li> <a href="/wiki/">Kluboj</a> </li>
-            <li> <a href="/wiki/">Membrejo</a> </li>
-        </ul>
-      </div>
 
+    </div>
+  </div>
+
+  <div id="mainmenu">
+    <div class="site">
+      <?php if(tpl_getConf('search') == 'menu') { ?>
+         <div id="searchtool">
+           <?php tpl_searchform() ?>
+         </div>
+      <?php }?>
+      <ul>
+        <li> <a href="/wiki/">Pri ni</a>  </li>
+        <li class="active"> <a href="/wiki/">Projektoj</a> </li>
+        <li> <a href="/wiki/">Kluboj</a> </li>
+        <li> <a href="/wiki/">Membrejo</a> </li>
+      </ul>
     </div>
   </div>
 
   <div id="submenu">
     <div class="site">
-      Place for submenu
+        <ul>
+            <li> <a href="/wiki/">Serĉi</a>  </li>
+            <li> <a href="/wiki/">Novaĵojn</a>  </li>
+            <li> <a href="/wiki/">Kategorioj</a> </li>
+            <li> <a href="/wiki/">Krei novan</a> </li>
+        </ul>
     </div>
   </div>
 

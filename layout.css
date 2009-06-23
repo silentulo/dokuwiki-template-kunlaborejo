@@ -60,22 +60,28 @@ html, body {
 }
 
 /* --------------- menu --------------------*/
+#mainmenu, #mainmenu ul, #mainmenu li, #mainmenu a,
+#searchtool  {
+	display: block;
+	height: 1.6em;
+}
+
+#searchtool input.edit {
+	height: 1.5em;
+	border: 0.1em solid;
+}
+
 #mainmenu {
+	padding-top: 1em;
 	clear: both;
-	padding-top: 1.2em;
-	height: 2em;
 }
 
-#mainmenu li {
+#mainmenu ul {
+}
+
+#mainmenu li, #submenu li {
     float: left;
-    position: relative;
     list-style-type: none;
-    height: 1.8em;
-    margin-right: 0.2em;
-}
-
-#mainmenu a {
-	padding: 0em 2em;
 }
 
 #searchtool {
@@ -83,7 +89,12 @@ html, body {
 }
 
 #submenu {
-	padding: 0.2em 0em;
+	height: 1.6em;
+}
+
+#submenu {
+    padding-top: 0.4em;
+	clear: both;
 }
 
 /* --------------- body --------------------*/

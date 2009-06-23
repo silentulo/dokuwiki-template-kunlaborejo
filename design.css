@@ -44,36 +44,51 @@ body * {
 }
 
 /* ------------- menu -----------------------------*/
+#mainmenu {
+	border-bottom: 0.3em solid #999;
+}
+
 #mainmenu ul {
-	background: __background_body__;
 }
 
 #mainmenu li {
-	border-top: 0.4em solid #AAA;
-	border-left: 0.2em solid #CCC;
-	border-right: 0.2em solid #CCC;
-	-moz-border-radius: 0.6em 0.6em 0 0;
-}
-
-#mainmenu li.active {
-	border-top-color: #995;
+	border-bottom: 0.3em solid __background_body__;
+	padding: 0 0.2em;
+//	margin: 0 0.2em;
 }
 
 #mainmenu a {
-	font-size: 110%;
+	border-bottom: 0.3em solid #008080;
+	padding: 0 0.4em;
+//	text-transform: uppercase;
 	text-decoration: none;
-	color: black;
+	color: #333;
 }
 
 #mainmenu a:hover {
-	background: #EEE;
+	border-bottom: 0.3em solid #00a0a0;
 }
 
-#submenu {
-	background: #CCC;
-	color: black;
+#submenu ul {
+//	border-bottom: 0.1em solid #777;
 }
 
+#searchtool {
+	border-bottom: 0.3em solid __background_body__;
+	padding: 0 0.4em;
+}
+
+#searchtool input.button {
+	position: relative;
+	top: 0.2em;
+}
+
+#searchtool input.edit {
+	margin: 0 0.2em;
+	border-color: #008000;
+	border-bottom-width: 0.3em;
+//	background: #eee;
+}
 
 /* ------------ footer ----------------------------*/
 #page_meta {
