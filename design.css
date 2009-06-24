@@ -45,20 +45,20 @@ body * {
 
 /* ------------- menu -----------------------------*/
 #mainmenu {
-	border-bottom: 0.3em solid #999;
+	border-bottom: __header_line_width__ solid __header_line_color__;
 }
 
 #mainmenu ul {
 }
 
 #mainmenu li {
-	border-bottom: 0.3em solid __background_body__;
+	border-bottom: __header_line_width__ solid __background_body__;
 	padding: 0 0.2em;
 //	margin: 0 0.2em;
 }
 
 #mainmenu a {
-	border-bottom: 0.3em solid #008080;
+	border-bottom: __header_line_width__ solid #008080;
 	padding: 0 0.4em;
 //	text-transform: uppercase;
 	text-decoration: none;
@@ -66,11 +66,11 @@ body * {
 }
 
 #mainmenu a:hover {
-	border-bottom: 0.3em solid #00a0a0;
+	border-bottom: __header_line_width__ solid #00a0a0;
 }
 
 #searchtool {
-	border-bottom: 0.3em solid __background_body__;
+	border-bottom: __header_line_width__ solid __background_body__;
 	padding: 0 0.4em;
 }
 
@@ -82,7 +82,7 @@ body * {
 #searchtool input.edit {
 	margin: 0 0.2em;
 	border-color: #008000;
-	border-bottom-width: 0.3em;
+	border-bottom-width: __header_line_width__;
 //	background: #eee;
 }
 

@@ -27,6 +27,10 @@ __page_width__=65%
 __page_margin__=2%
 __right_sidebar_width__=15%
 
+;-------------------------------------
+; header:
+__header_line_width__ = 0.2em;
+__header_line_color__ = #555;
 
 ;-------------------------------------
 ; colors
