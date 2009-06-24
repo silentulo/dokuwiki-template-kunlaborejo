@@ -129,6 +129,10 @@ li.level2, li.level3, li.level4  {
 	
 }
 
+.sidebar_box {
+	margin-bottom: 1.4em;
+}
+
 .sidebar_box li, .sidebar_box p, .sidebar_box input {
 	font-size: 90%;
 }
@@ -138,10 +142,14 @@ li.level2, li.level3, li.level4  {
 }
 
 
-.sidebar_box h1 {
+.sidebar_box h1, .tocheader {
 	font-size: 100%;
+	font-weight: bold;
 	border-bottom: 0.1px solid #888;
-	margin-top: 1.4em;
+}
+
+.toc_close, .toc_open {
+	float: right;
 }
 
 .sidebar_box h2 {
