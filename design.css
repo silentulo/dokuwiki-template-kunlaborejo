@@ -24,19 +24,14 @@ body * {
 	line-height: 1.4em;
 }
 
+li.level2, li.level3, li.level4  {
+	padding-left: 1em;
+}
+
 .meta {
   font-size: 70%;
   background-color: __background_body__;
   color: __text_meta__;
-}
-
-#breadcrumbs {
-  background-color: __background_body__;
-  color: __text_neu__;
-}
-
-#breadcrumbs span, #breadcrumbs a{
-  font-size: 80%;
 }
 
 /* ------------- header ---------------------------*/
@@ -50,6 +45,15 @@ body * {
 #userinfo {
   background: #555;
   color: white;
+}
+
+#breadcrumbs {
+  background-color: __background_body__;
+  color: __text_neu__;
+}
+
+#breadcrumbs span, #breadcrumbs a{
+  font-size: 80%;
 }
 
 /* ------------- menu -----------------------------*/
@@ -111,13 +115,23 @@ body * {
 	
 }
 
-.sidebar_box li {
+.sidebar_box li, .sidebar_box p, .sidebar_box input {
 	font-size: 90%;
+}
+
+.sidebar_box li {
     list-style-type: none;
 }
 
-li.level2, li.level3, li.level4  {
-	padding-left: 1em;
+
+.sidebar_box h1 {
+	font-size: 100%;
+	border-bottom: 0.1px solid #888;
+	margin-top: 1.6em;
+}
+
+.sidebar_box h2 {
+	font-size: 90%
 }
 
 /* ------------ footer ----------------------------*/
