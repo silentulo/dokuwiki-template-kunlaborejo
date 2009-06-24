@@ -10,6 +10,11 @@
 if (!defined('DOKU_INC')) die();
 if (!defined('DOKU_LF')) define('DOKU_LF',"\n");
 
+// Include language
+@include(dirname(__FILE__).'/lang/en/lang.php'); 
+if ( $conf['lang'] && $conf['lang'] != 'en' ) 
+    @include(dirname(__FILE__).'/lang/'.$conf['lang'].'/lang.php');
+
 // load sidebar contents
 $sbl   = explode(',',tpl_getConf('left_sidebar_content'));
 $sbr   = explode(',',tpl_getConf('right_sidebar_content'));
@@ -183,6 +188,7 @@ function tpl_sidebar_dispatch($sb,$pos) {
             $actions = array('admin', 'edit', 'history', 'recent', 'backlink', 'subscribe', 'subscribens', 'index', 'login', 'profile');
 
             print '<div class="toolbox_sidebar sidebar_box">' . DOKU_LF;
+            print '<h1>' . $lang['kunlaborejo_toolbox'] . '</h1>' . DOKU_LF;
             print '  <div class="level1">' . DOKU_LF;
             print '    <ul>' . DOKU_LF;
 
