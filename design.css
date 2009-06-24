@@ -95,6 +95,10 @@ body * {
 	background: white;
 	width: 15em;
 }
+/* ------------ sidebars --------------------------*/
+.sidebar_box li {
+	font-size: 90%;
+}
 
 /* ------------ footer ----------------------------*/
 #page_meta {

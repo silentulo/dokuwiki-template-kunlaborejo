@@ -87,19 +87,18 @@ html, body {
 	float: left;
 }
 
-/* --------------- body --------------------*/
+/* --------------- sidebars --------------------*/
 #left_sidebar {
   float: left;
   width: __left_sidebar_width__;
-  border: 1px solid;
 }
 
 #right_sidebar {
   float: right;
   width: __right_sidebar_width__;
-  border: 1px solid;
 }
 
+/* --------------- page --------------------*/
 #page {
   float: left;
   width: __page_width__;
