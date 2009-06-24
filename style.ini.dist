@@ -34,7 +34,7 @@ __header_line_color__ = #555;
 
 ;-------------------------------------
 ; colors
-__background_body__ = "#fbfbfb"
+__background_body__ = "#f9f9f9"
 __text_neu__       = "#666"
 __text_meta__       = "#558"
 
