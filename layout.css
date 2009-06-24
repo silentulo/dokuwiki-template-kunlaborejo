@@ -79,22 +79,13 @@ html, body {
 #mainmenu ul {
 }
 
-#mainmenu li, #submenu li {
+#mainmenu li {
     float: left;
     list-style-type: none;
 }
 
 #searchtool {
 	float: right;
-}
-
-#submenu {
-	height: 1.6em;
-}
-
-#submenu {
-    padding-top: 0.4em;
-	clear: both;
 }
 
 /* --------------- body --------------------*/

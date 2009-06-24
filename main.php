@@ -75,17 +75,6 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
     </div>
   </div>
 
-  <div id="submenu">
-    <div class="site">
-        <ul>
-            <li> <a href="/wiki/">Serĉi</a>  </li>
-            <li> <a href="/wiki/">Novaĵojn</a>  </li>
-            <li> <a href="/wiki/">Kategorioj</a> </li>
-            <li> <a href="/wiki/">Krei novan</a> </li>
-        </ul>
-    </div>
-  </div>
-
   <?php if(tpl_getConf('trace')) {?> 
     <div id="breadcrumbs">
       <div class="site">  

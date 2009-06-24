@@ -69,10 +69,6 @@ body * {
 	border-bottom: 0.3em solid #00a0a0;
 }
 
-#submenu ul {
-//	border-bottom: 0.1em solid #777;
-}
-
 #searchtool {
 	border-bottom: 0.3em solid __background_body__;
 	padding: 0 0.4em;
