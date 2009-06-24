@@ -43,6 +43,10 @@ body * {
 #header {
 }
 
+#logo img {
+	height: 3em;
+}
+
 #userinfo {
   background: #555;
   color: white;
@@ -98,6 +102,11 @@ body * {
 /* ------------ sidebars --------------------------*/
 .sidebar_box li {
 	font-size: 90%;
+    list-style-type: none;
+}
+
+li.level2, li.level3, li.level4  {
+	padding-left: 1em;
 }
 
 /* ------------ footer ----------------------------*/
