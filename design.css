@@ -43,6 +43,11 @@ li.level2, li.level3, li.level4  {
 	text-align: right;
 }
 
+p {
+	margin-bottom: 1.4em;
+	text-align: justify;
+}
+
 /* ------------- header ---------------------------*/
 #header {
 }
@@ -163,9 +168,6 @@ li.level2, li.level3, li.level4  {
 
 /* ------------- page -----------------------------*/
 
-#page p {
-	margin-top: 1.4em;
-}
 
 /* ------------ footer ----------------------------*/
 #page_meta {

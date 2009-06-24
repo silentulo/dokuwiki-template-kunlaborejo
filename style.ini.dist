@@ -23,7 +23,7 @@ design.css         = screen
 ;-------------------------------------
 ; widths for main body part
 __left_sidebar_width__=14%
-__page_width__=67%
+__page_width__=66%
 __page_margin__=2%
 __right_sidebar_width__=14%
 
