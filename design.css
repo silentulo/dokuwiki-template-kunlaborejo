@@ -76,14 +76,19 @@ body * {
 
 #searchtool input.button {
 	position: relative;
-	top: 0.2em;
+	border: 0em solid;
+	border-bottom: __header_line_width__ solid #008080;
+	background: __background_body__;
+	top: 0.2em;   // Fix this hack, the button should be positioned automatically
+	margin: 0 0.2em;
 }
 
 #searchtool input.edit {
 	margin: 0 0.2em;
 	border-color: #008000;
-	border-bottom-width: __header_line_width__;
-//	background: #eee;
+	border-style: solid;
+	border-width: 0.1em 0.1em __header_line_width__ 0.1em;
+	width: 15em;
 }
 
 /* ------------ footer ----------------------------*/
