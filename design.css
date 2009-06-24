@@ -79,7 +79,7 @@ li.level2, li.level3, li.level4  {
 }
 
 #mainmenu a:hover {
-	border-bottom: __header_line_width__ solid #00a0a0;
+	border-bottom: __header_line_width__ solid #00f0f0;
 }
 
 #searchtool {
@@ -94,6 +94,11 @@ li.level2, li.level3, li.level4  {
 	background: __background_body__;
 	top: 0.15em;   // Fix this hack, the button should be positioned automatically
 	margin: 0 0.2em;
+	cursor:pointer;
+}
+
+#searchtool input.button:hover {
+	border-bottom-color: #00f0f0;
 }
 
 #searchtool input.edit {
