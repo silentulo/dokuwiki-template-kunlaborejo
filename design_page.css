@@ -1,0 +1,670 @@
+
+
+/* the document */
+#page {
+  text-align: justify;
+}
+
+#page table {
+  font-size: 100%;
+}
+
+#page tr,
+#page td,
+#page th {
+}
+
+#page p,
+#page blockquote,
+#page table,
+#page pre {
+  margin: 0 0 1.4em 0;
+}
+
+#page hr {
+  border: 0em;
+  border-top: 1px solid __border__;
+  text-align: center;
+  height: 0em;
+}
+
+#page div.nothing {
+  text-align: center;
+  margin: 2em;
+}
+
+/* ---------------- forms ------------------------ */
+
+#page form {
+  border: none;
+  display: inline;
+}
+
+#page label.block {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+}
+
+#page label.simple {
+  display: block;
+  text-align: left;
+  font-weight: normal;
+}
+
+#page label.block input.edit {
+  width: 50%;
+}
+
+fieldset {
+  width: 40em;
+  text-align: center;
+  border: 0.1em solid __border__;
+  padding: 0.5em;
+  margin: auto;
+}
+
+#page textarea.edit {
+  font-family: monospace;
+  font-size: 100%;
+  color: __text__;
+  background-color: __background__;
+  border: 0.1em solid __border__;
+  padding: 0.3em 0 0 0.3em;
+  width: 100%;
+}
+
+/* nice alphatransparency background except for IE <7 */
+html>body #page textarea.edit {
+  background:  __background__ url(images/inputshadow.png) repeat-x top;
+}
+
+#page input.edit,
+#page select.edit {
+  font-size: 100%;
+  border: 1px solid __border__;
+  color: __text__;
+  background-color: __background__;
+  vertical-align: middle;
+  margin: 1px;
+  padding: 0.20em 0.3em;
+  display: inline;
+}
+
+/* nice alphatransparency background except for IE <7 */
+html>body #page input.edit,
+html>body #page select.edit {
+  background:  __background__ url(images/inputshadow.png) repeat-x top;
+}
+
+#page select.edit {
+  padding: 0.1em 0;
+}
+
+#page input.missing {
+  font-size: 100%;
+  border: 1px solid __border__;
+  color: __text__;
+  background-color: #ffcccc;
+  vertical-align: middle;
+  margin: 1px;
+  padding: 0.20em 0.3em;
+  display: inline;
+}
+
+/* disabled style - not understood by IE */
+#page textarea.edit[disabled],
+#page textarea.edit[readonly],
+#page input.edit[disabled],
+#page input.edit[readonly],
+#page select.edit[disabled] {
+  background-color: __background__!important;
+  color: __text_neu__!important;
+}
+
+/* edit form */
+#page div.toolbar,
+#page div#wiki__editbar {
+   margin: 2px 0;
+   text-align: left;
+}
+#page div#size__ctl {
+   float: right;
+   width: 60px;
+   height: 2.7em;
+}
+#page #size__ctl img {
+   cursor: pointer;
+}
+#page div#wiki__editbar div.editButtons {
+   float: left;
+   padding: 0 1.0em 0.7em 0;
+}
+#page div#wiki__editbar div.summary {
+   float: left;
+}
+#page .nowrap {
+   white-space: nowrap;
+}
+#page div#draft__status {
+  color: __text_alt__;
+}
+
+#page div.license {
+  padding-top: 0.5em;
+  text-align: left;
+}
+
+#page form#dw__editform div.license {
+  clear: left;
+}
+
+/* --------- buttons ------------------- */
+
+#page input.button,
+#page button.button {
+  border: 1px solid __border__;
+  color: __text__;
+  background-color: __background__;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 100%;
+  cursor: pointer;
+  margin: 1px;
+  padding: 0.125em 0.4em;
+}
+
+/* nice alphatransparency background except for IE <7 */
+html>body #page input.button,
+html>body #page button.button {
+  background:  __background__ url(images/buttonshadow.png) repeat-x bottom;
+}
+
+* html #page input.button,
+* html #page button.button {
+  height: 1.8em;
+}
+
+#page div.secedit input.button {
+  border: 1px solid __border__;
+  color: __text__;
+  background-color: __background__;
+  vertical-align: middle;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  cursor: pointer;
+  float: right;
+  display: inline;
+}
+
+/* ----------- page navigator ------------- */
+
+#page div.pagenav {
+    margin: 1em 0 0 0;
+}
+
+#page div.pagenav-prev {
+    text-align: right;
+    float: left;
+    width: 49%
+}
+
+#page div.pagenav-next {
+    text-align: left;
+    float: right;
+    width: 49%
+}
+
+/* --------------- Links ------------------ */
+
+
+#page h1 a,
+#page h2 a,
+#page h3 a,
+#page h4 a,
+#page h5 a,
+#page a.nolink {
+  color: __text__ !important;
+  text-decoration: none !important;
+}
+
+/* external link */
+#page a.urlextern {
+  background: transparent url(images/link_icon.gif) 0px 1px no-repeat;
+  padding: 1px 0px 1px 16px;
+}
+
+/* windows share */
+#page a.windows {
+  background: transparent url(images/windows.gif) 0px 1px no-repeat;
+  padding: 1px 0px 1px 16px;
+}
+
+/* interwiki link (icon are set by dokuwiki) */
+#page a.interwiki {
+}
+
+/* link to some embedded media */
+#page a.media {
+}
+
+#page a.urlextern:link,
+#page a.windows:link,
+#page a.interwiki:link {
+  color: __extern__;
+}
+
+#page a.urlextern:visited,
+#page a.windows:visited,
+#page a.interwiki:visited {
+  color: purple;
+}
+#page a.urlextern:hover,
+#page a.urlextern:active,
+#page a.windows:hover,
+#page a.windows:active,
+#page a.interwiki:hover,
+#page a.interwiki:active {
+  color: __text__;
+}
+
+/* email link */
+#page a.mail {
+  background: transparent url(images/mail_icon.gif) 0px 1px no-repeat;
+  padding: 1px 0px 1px 16px;
+}
+
+/* existing wikipage */
+#page a.wikilink1 {
+  color: __existing__ !important;
+}
+
+/* not existing wikipage */
+#page a.wikilink2 {
+  color: __missing__ !important;
+  text-decoration: none !important;
+  border-bottom: dashed 1px __missing__ !important;
+}
+
+/* ------------- Page elements ----------------- */
+
+#page div.preview {
+  background-color: __background__;
+  margin: 0 0 0 2em;
+  padding: 4px;
+  border: 1px dashed __text__;
+}
+
+#page span.user {
+  color: __text_other__;
+  font-size: 90%;
+}
+
+#page li.minor {
+  color: __text_neu__;
+  font-style: italic;
+}
+
+/* embedded images */
+#page img.media {
+  margin: 3px;
+}
+
+#page img.medialeft {
+  border: 0;
+  float: left;
+  margin: 0 1.5em 0 0;
+}
+
+#page img.mediaright {
+  border: 0;
+  float: right;
+  margin: 0 0 0 1.5em;
+}
+
+#page img.mediacenter {
+  border: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+/* smileys */
+#page img.middle {
+  vertical-align: middle;
+}
+
+#page acronym {
+  cursor: help;
+  border-bottom: 1px dotted __text__;
+}
+
+/* general headline setup */
+#page h1,
+#page h2,
+#page h3,
+#page h4,
+#page h5 {
+    color: __text__;
+    background-color: inherit;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0 0 1em 0;
+    padding: 0.5em 0 0 0;
+    border-bottom: 1px solid __border__;
+    clear: left;
+}
+
+/* special headlines */
+#page h1 {font-size: 160%; margin-left: 0px; font-weight: bold;}
+#page h2 {font-size: 150%; margin-left: 20px;}
+#page h3 {font-size: 140%; margin-left: 40px; border-bottom: none; font-weight: bold;}
+#page h4 {font-size: 120%; margin-left: 60px; border-bottom: none; font-weight: bold;}
+#page h5 {font-size: 100%; margin-left: 80px; border-bottom: none; font-weight: bold;}
+
+/* indent different sections */
+#page div.level1 {margin-left: 3px;}
+#page div.level2 {margin-left: 23px;}
+#page div.level3 {margin-left: 43px;}
+#page div.level4 {margin-left: 63px;}
+#page div.level5 {margin-left: 83px;}
+
+/* unordered lists */
+#page ul {
+  line-height: 1.5em;
+  list-style-type: square;
+  list-style-image: none;
+  margin: 0 0 1em 3.5em;
+  color: __text_alt__;
+}
+
+/* ordered lists */
+#page ol {
+  line-height: 1.5em;
+  list-style-image: none;
+  margin: 0 0 1em 3.5em;
+  color: __text_alt__;
+  font-weight: bold;
+}
+
+/* no gap in between nested lists */
+#page li ul {
+  margin-bottom: 0;
+}
+#page li ol {
+  margin-bottom: 0;
+}
+
+/* the list items overriding the ul/ol definition */
+#page .li {
+  color: __text__;
+  font-weight: normal;
+}
+
+#page ol {list-style-type: decimal}
+#page ol ol {list-style-type: upper-roman}
+#page ol ol ol {list-style-type: lower-alpha}
+#page ol ol ol ol {list-style-type: lower-greek}
+
+#page li.open {
+  list-style-image: url(images/open.gif);
+    /*list-style-type: circle;*/
+}
+
+#page li.closed {
+  list-style-image: url(images/closed.gif);
+    /*list-style-type: disc;*/
+}
+
+#page blockquote {
+  border-left: 2px solid __border__;
+  padding-left: 3px;
+}
+
+#page pre {
+  padding: 0.5em;
+  border: 0.1px dashed __border__;
+  color: __text__;
+  overflow: auto;
+}
+
+/* code blocks by indention */
+#page pre.pre {
+  background-color: __background_other__;
+}
+
+/* code blocks by code tag */
+#page pre.code {
+  background-color: __background_other__;
+}
+
+/* inline code words */
+#page code {
+  font-size: 100%;
+}
+
+/* code blocks by file tag */
+#page pre.file {
+  background-color: __background_alt__;
+}
+
+/* inline tables */
+#page table.inline {
+  background-color: __background__;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+#page table.inline th {
+  padding: 3px;
+  border: 1px solid __border__;
+  background-color: __background_alt__;
+}
+
+#page table.inline td {
+  padding: 3px;
+  border: 1px solid __border__;
+}
+
+
+/* ---------------------------- Diff rendering --------------------------*/
+#page table.diff {
+  background-color: __background__;
+  width: 100%;
+}
+#page td.diff-blockheader {
+  font-weight: bold;
+}
+#page table.diff th {
+  border-bottom: 1px solid __border__;
+  font-size: 100%;
+  width: 50%;
+  font-weight: normal;
+  text-align: left;
+}
+#page table.diff th a {
+    font-weight: bold;
+}
+#page table.diff th span.user {
+    color: __text__;
+    font-size: 100%;
+}
+#page table.diff th span.sum {
+    font-size: 100%;
+    font-weight: bold;
+}
+#page table.diff th.minor {
+  font-style: italic;
+}
+#page table.diff td {
+  font-family: monospace;
+  font-size: 80%;
+}
+#page td.diff-addedline {
+  background-color: #ddffdd;
+}
+#page td.diff-deletedline {
+    background-color: #ffffbb;
+}
+#page td.diff-context {
+    background-color: __background__;
+}
+#page table.diff td.diff-addedline strong,
+#page table.diff td.diff-deletedline strong {
+    color: red;
+}
+
+/* --------------------- footnotes -------------------------------- */
+
+#page div.footnotes {
+  clear: both;
+  border-top: 1px solid __border__;
+  padding-left: 1em;
+  margin-top: 1em;
+}
+
+#page div.fn {
+  font-size: 90%;
+}
+
+#page a.fn_bot {
+  font-weight: bold;
+}
+
+/* insitu-footnotes */
+div.insitu-footnote {
+  font-size: 80%;
+  line-height: 1.2em;
+  border: 1px solid __border__;
+  background-color: __background_other__;
+  text-align: left;
+  padding: 4px;
+  max-width: 40%;    /* IE's width is handled in javascript */
+}
+
+/* overcome IE issue with one line code or file boxes which require h. scrolling */
+* html .insitu-footnote pre.code,
+* html .insitu-footnote pre.file {
+  padding-bottom: 18px;
+}
+
+/* --------------- search result formating --------------- */
+#page .search_result {
+  margin-bottom: 6px;
+  padding: 0 10px 0 30px;
+}
+
+#page .search_snippet {
+  color: __text_other__;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+#page .search_sep {
+  color: __text__;
+}
+
+#page .search_hit {
+  color: __text__;
+  background-color: __highlight__;
+}
+#page strong.search_hit {
+  font-weight: normal;
+}
+
+#page div.search_quickresult {
+  margin: 0 0 15px 30px;
+  padding: 0 10px 10px 0;
+  border-bottom: 1px dashed __border__;
+}
+#page div.search_quickresult h3 {
+  margin: 0 0 1.0em 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#page ul.search_quickhits {
+  margin: 0 0 0.5em 1.0em;
+}
+
+#page ul.search_quickhits li {
+  margin: 0 1.0em 0 1.0em;
+  float:left;
+  width: 30%;
+}
+
+#page div.section_highlight {
+  background-color: __background_alt__;
+}
+
+/* ---------- AJAX quicksearch ----------- */
+
+#page div.ajax_qsearch {
+  position: absolute;
+  right: 237px;;
+  width: 200px;
+  opacity: 0.9;
+  display: none;
+  font-size: 80%;
+  line-height: 1.2em;
+  border: 1px solid __border__;
+  background-color: __background_other__;
+  text-align: left;
+  padding: 4px;
+}
+
+/* --------- Toolbar -------------------- */
+button.toolbutton {
+  background-color: __background__;
+  padding: 0px;
+  margin: 0 1px 0 0;
+  border: 1px solid __border__;
+  cursor: pointer;
+}
+
+/* nice alphatransparency background except for IE <7 */
+html>body button.toolbutton {
+  background:  __background__ url(images/buttonshadow.png) repeat-x bottom;
+}
+
+div.picker {
+  width: 250px;
+  border: 1px solid __border__;
+  background-color: __background_alt__;
+}
+
+button.pickerbutton {
+  padding: 0px;
+  margin: 0 1px 1px 0;
+  border: 0;
+  background-color: transparent;
+  font-size: 80%;
+  cursor: pointer;
+}
+
+/* ---------------  Image Details  ----------------- */
+
+#page div.img_big {
+  float: left;
+  margin-right: 0.5em;
+}
+
+#page dl.img_tags dt {
+  font-weight: bold;
+  background-color: __background_alt__;
+}
+#page dl.img_tags dd {
+  background-color: __background__;
+}
+
+#page div.imagemeta {
+  color: __text_neu__;
+  font-size: 70%;
+  line-height: 95%;
+}
+
+#page div.imagemeta img.thumb {
+  float:left;
+  margin-right: 0.1em;
+}

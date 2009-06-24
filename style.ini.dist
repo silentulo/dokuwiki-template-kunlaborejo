@@ -9,11 +9,12 @@
 ; print, screen and rtl are supported. rtl styles are loaded additionally
 ; to screen styles if a right-to-left language is selected (eg. hebrew)
 [stylesheets]
-layout.css         = screen
-design.css         = screen
+layout.css          = screen
+design_page.css     = screen
+design.css          = screen
 ;mediamanager.css   = screen
-;rtl.css           = rtl
-;print.css         = print
+;rtl.css            = rtl
+;print.css          = print
 
 ; This section is used to configure some placeholder values used in
 ; the stylesheets. Changing this file is the simplest method to
@@ -34,9 +35,37 @@ __header_line_color__ = #555;
 
 ;-------------------------------------
 ; colors
-__background_body__ = "#f9f9f9"
-__text_neu__       = "#666"
-__text_meta__       = "#558"
+
+; main text and background colors
+__text__           = "#000"
+__background__     = "#f9f9f9"
+
+; alternative text and background colors
+__text_alt__       = "#638c9c"
+__background_alt__ = "#dee7ec"
+
+; other text and background colors
+__text_other__       = "#ccc"
+__background_other__ = "#f7f9fa"
+
+; neutral colors
+__text_neu__         = "#666"
+
+; colors for meta information
+__text_meta__        = "#558"
+
+; border color
+__border__           = "#888"
+
+; these are used for links
+__link__      = "#0000EE"
+__extern__    = "#436976"
+__existing__  = "#0000EE"
+__missing__   = "#ed5353"
+
+; highlighting search snippets
+__highlight__ = "#ff9"
+
 
 
 ; setup vim: ts=2 sw=2:

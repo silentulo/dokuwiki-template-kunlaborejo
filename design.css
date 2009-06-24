@@ -12,7 +12,7 @@ input {
 
 body {
   font: 14px "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
-  background-color: __background_body__;
+  background-color: __background__;
   color: black;
 }
 
@@ -30,7 +30,7 @@ li.level2, li.level3, li.level4  {
 
 .meta {
   font-size: 70%;
-  background-color: __background_body__;
+  background-color: __background__;
   color: __text_meta__;
 }
 
@@ -48,6 +48,18 @@ p {
 	text-align: justify;
 }
 
+a:link,
+a:visited {
+  color: __link__;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: __link__;
+  text-decoration: underline;
+}
+
 /* ------------- header ---------------------------*/
 #header {
 }
@@ -61,7 +73,7 @@ p {
 }
 
 #breadcrumbs {
-  background-color: __background_body__;
+  background-color: __background__;
   color: __text_neu__;
 }
 
@@ -78,7 +90,7 @@ p {
 }
 
 #mainmenu li {
-	border-bottom: __header_line_width__ solid __background_body__;
+	border-bottom: __header_line_width__ solid __background__;
 	padding: 0 0.2em;
 //	margin: 0 0.2em;
 }
@@ -96,7 +108,7 @@ p {
 }
 
 #searchtool {
-	border-bottom: __header_line_width__ solid __background_body__;
+	border-bottom: __header_line_width__ solid __background__;
 	padding: 0 0.4em;
 }
 
@@ -104,7 +116,7 @@ p {
 	position: relative;
 	border: 0em solid;
 	border-bottom: __header_line_width__ solid #008080;
-	background: __background_body__;
+	background: __background__;
 	top: 0.15em;   // Fix this hack, the button should be positioned automatically
 	margin: 0 0.2em;
 	cursor:pointer;
@@ -165,9 +177,6 @@ p {
 }
 
 
-/* ------------- page -----------------------------*/
-
-
 /* ------------ footer ----------------------------*/
 #page_meta {
   text-align: right;
@@ -177,4 +186,14 @@ p {
 	background: #BBCCD9;
 	color #CADCEA;
 	border-top: 0.4em solid #AABBC9
+}
+
+/* ------------ config manager -------------------*/
+#config__manager fieldset {
+	padding: 1em 1em 0em;
+}
+
+#config__manager td.label span.outkey {
+	margin-top: -1em;
+	margin-left: 0em;
 }
