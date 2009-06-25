@@ -68,11 +68,11 @@ html, body {
 }
 
 #mainmenu {
-	padding-top: 1em;
-	clear: both;
+	margin-top: 3.5em;
 }
 
 #mainmenu ul {
+	margin-left: 15em;
 }
 
 #mainmenu li {
