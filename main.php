@@ -67,10 +67,7 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
          </div>
       <?php }?>
       <ul>
-        <li> <a href="/wiki/">Pri ni</a>  </li>
-        <li class="active"> <a href="/wiki/">Projektoj</a> </li>
-        <li> <a href="/wiki/">Kluboj</a> </li>
-        <li> <a href="/wiki/">Membrejo</a> </li>
+		<?php @include(dirname(__FILE__).'/menu.php')?>
       </ul>
     </div>
   </div>
