@@ -12,6 +12,7 @@
 layout.css          = screen
 design_page.css     = screen
 design.css          = screen
+design_plugins.css  = screen
 ;mediamanager.css   = screen
 ;rtl.css            = rtl
 ;print.css          = print
@@ -66,6 +67,13 @@ __missing__   = "#ed5353"
 ; highlighting search snippets
 __highlight__ = "#ff9"
 
+
+; ---------------------------------
+; plugins
+
+; discussion
+__discussion_background__ = "#eee"
+__discussion_head_font_size__ = "90%"
 
 
 ; setup vim: ts=2 sw=2:

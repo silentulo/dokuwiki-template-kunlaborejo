@@ -1,0 +1,20 @@
+
+/* --------- settings for discussion -------------- */
+
+.comment_wrapper {
+	background: __discussion_background__;
+	padding-right: 2em ;
+}
+
+.comment_wrapper .comment_head {
+	font-size: __discussion_head_font_size__;
+}
+
+.comment_subscribe {
+	padding-left: 2em;
+	display: inline;
+}
+
+.comment_subscribe label.block {
+	display: inline !important;
+}
