@@ -119,32 +119,6 @@ a.wikilink2 {
 	border-bottom: __header_line_width__ solid #00f0f0;
 }
 
-#searchtool {
-	border-bottom: __header_line_width__ solid __background__;
-	padding: 0 0.4em;
-}
-
-#searchtool input.button {
-	position: relative;
-	border: 0em solid;
-	border-bottom: __header_line_width__ solid #008080;
-	background: __background__;
-	top: 0.15em;   // Fix this hack, the button should be positioned automatically
-	margin: 0 0.2em;
-	cursor:pointer;
-}
-
-#searchtool input.button:hover {
-	border-bottom-color: #00f0f0;
-}
-
-#searchtool input.edit {
-	margin: 0 0.2em;
-	border: 0 solid;
-	border-bottom: __header_line_width__ solid #008000;
-	background: white;
-	width: 15em;
-}
 /* ------------ sidebars --------------------------*/
 #left_sidebar {
 	border-right: 0.1em solid #888;

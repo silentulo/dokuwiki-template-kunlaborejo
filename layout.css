@@ -61,8 +61,7 @@ html, body {
 }
 
 /* --------------- menu --------------------*/
-#mainmenu, #mainmenu ul, #mainmenu li, #mainmenu a,
-#searchtool, #searchtool input.edit, #searchtool input.button  {
+#mainmenu, #mainmenu ul, #mainmenu li, #mainmenu a {
 	display: block;
 	height: 1.5em;
 }
@@ -82,14 +81,6 @@ html, body {
 
 #mainmenu li.right {
     float: right;
-}
-
-#searchtool {
-	float: right;
-}
-
-#searchtool input {
-	float: left;
 }
 
 /* --------------- sidebars --------------------*/
