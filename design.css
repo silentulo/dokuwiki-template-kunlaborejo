@@ -81,11 +81,9 @@ a.wikilink2 {
 }
 
 #breadcrumbs {
+  padding-top: 0.3em;
   background-color: __background__;
   color: __text_neu__;
-}
-
-#breadcrumbs span, #breadcrumbs a{
   font-size: 80%;
 }
 
