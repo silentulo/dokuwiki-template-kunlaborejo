@@ -91,7 +91,7 @@ a.wikilink2 {
 
 /* ------------- menu -----------------------------*/
 #mainmenu {
-	border-bottom: __header_line_width__ solid __header_line_color__;
+	border-bottom: __header_line_width__ solid __border__;
 }
 
 #mainmenu ul {
@@ -106,9 +106,8 @@ a.wikilink2 {
 #mainmenu a {
 	border-bottom: __header_line_width__ solid #008080;
 	padding: 0 0.4em;
-//	text-transform: uppercase;
+	font-variant: small-caps;
 	text-decoration: none;
-	color: #333;
 }
 
 #mainmenu a:hover {
