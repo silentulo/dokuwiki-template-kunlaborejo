@@ -108,6 +108,13 @@ a.wikilink2 {
 	text-decoration: none;
 }
 
+#mainmenu a.admin {
+	border-bottom: __header_line_width__ solid #800080;
+	padding: 0 0.4em;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+
 #mainmenu a:hover {
 	border-bottom: __header_line_width__ solid #00f0f0;
 }

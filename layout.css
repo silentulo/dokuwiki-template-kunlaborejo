@@ -80,6 +80,10 @@ html, body {
     list-style-type: none;
 }
 
+#mainmenu li.right {
+    float: right;
+}
+
 #searchtool {
 	float: right;
 }
