@@ -60,6 +60,14 @@ a:active {
   text-decoration: underline;
 }
 
+/* not existing wikipage */
+a.wikilink2 {
+  color: __missing__ !important;
+  text-decoration: none !important;
+  border-bottom: dashed 1px __missing__ !important;
+}
+
+
 /* ------------- header ---------------------------*/
 #header {
 }
