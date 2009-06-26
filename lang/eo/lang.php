@@ -4,7 +4,7 @@
  * encoded as UTF-8
  */
 
-$lang['kunlaborejo_toolbox']     = "Helpilaro";
+$lang['kunlaborejo_toolbox']     = "Agilaro";
 
 $lang['kunlaborejo_about']	     = 'Pri ni';
 $lang['kunlaborejo_projects']    = 'Projektoj';
