@@ -17,5 +17,7 @@ $lang['left_sidebar_content_other']     = "Aliaj maldekstraj ligilaroj (apartite
 $lang['right_sidebar_order']            = "Ordo de la dekstraj ligilaroj (apartite per komoj)";
 $lang['right_sidebar_content']          = "Kio estos en la dekstra flanko";
 $lang['right_sidebar_content_other']    = "Aliaj dekstraj ligilaroj (apertite per komoj)";
+$lang['toolbox_order']                  = "Ordo de la ligiloj en la helpilaro (apartite per komoj)";
+$lang['toolbox_content']                = "Kio estos en la helpilaro";
 $lang['search']                         = "Pozicio de la serĉskatolo (nur se estas ligilaroj en ambaŭ flankoj)";
 ?>

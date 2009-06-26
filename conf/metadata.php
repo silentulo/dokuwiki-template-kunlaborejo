@@ -17,6 +17,8 @@ $meta['left_sidebar_order']       = array('string', '_pattern' => '#[a-z0-9,]*#'
 $meta['left_sidebar_content']     = array('multicheckbox', '_choices' => array('main','toc','user','group','namespace','toolbox','index','trace','extra'));
 $meta['right_sidebar_order']      = array('string', '_pattern' => '#[a-z0-9,]*#');
 $meta['right_sidebar_content']    = array('multicheckbox', '_choices' => array('main','toc','user','group','namespace','toolbox','index','trace','extra'));
+$meta['toolbox_content']          = array('multicheckbox', '_choices' => array('admin', 'edit', 'history', 'recent', 'backlink', 'subscribe', 'subscribens', 'index', 'login', 'profile'));
+$meta['toolbox_order']            = array('string', '_pattern' => '#[a-z0-9,]*#');
 $meta['search']                   = array('multichoice', '_choices' => array('left', 'right', 'menu'));
 $meta['closedwiki']               = array('onoff');
 //Setup vim:ts=2:sw=2:
