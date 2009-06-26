@@ -51,9 +51,7 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
                        '<img src="' . DOKU_TPL . 'images/logo-7.png">',
                        'name="dokuwiki__top" accesskey="h" title="'.$conf['title'].'"')?>
       </div>
-      <div id="userinfo">
-      	Eniru: <form> <input /> <input /> <submit value="Ek"/> </form>
-      </div>
+      <?php tpl_login_dialog(); ?>
 
 
     </div>

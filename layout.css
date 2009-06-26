@@ -39,21 +39,8 @@ html, body {
 	float: left;
 }
 
-
-#userinfo {
-    position: absolute;
-    top: 0em;
-    right: 0em;
-	padding: 0.4em 1em;
-}
-
-#userinfo form {
-	display: inline;
-}
-
-#userinfo input {
-	width: 10em;
-	font-size: 80%;
+#userinfo, #login__top {
+	float: right;
 }
 
 #breadcrumbs {

@@ -373,5 +373,18 @@ function tpl_sidebar_hide() {
     }
 }
 
+/**
+ * Prints login dialog if user is not logged in or userinfo in other case
+ */
+function tpl_login_dialog() {
+	global $ID;
+	global $lang;
+	print '<div id="login__top">' . DOKU_LF;
+	tpl_actionlink('login');
+	print ' • ' . DOKU_LF;
+    print '<a href="'.wl($ID,'do=register').'" rel="nofollow" class="wikilink1">'.$lang['kunlaborejo_register'].'</a>';
+	print '</div>' . DOKU_LF;
+}
+
 // vim:ts=4:sw=4:et:enc=utf-8:
 ?>

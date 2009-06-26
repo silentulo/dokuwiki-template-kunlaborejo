@@ -13,3 +13,5 @@ $lang['kunlaborejo_meets']       = 'Renkontiĝoj';
 $lang['kunlaborejo_help']        = 'Helpo';
 $lang['kunlaborejo_admin']       = 'Adminstri';
 $lang['kunlaborejo_member']      = 'Membrejo';
+
+$lang['kunlaborejo_register']    = 'Registriĝi';
