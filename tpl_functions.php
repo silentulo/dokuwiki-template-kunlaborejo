@@ -65,21 +65,44 @@ function tpl_sidebar($pos) {
         return;
     }
 
+    tpl_dispatch_ordered_content ($sb_order, $sb_content, "tpl_sidebar_dispatch_" . $pos);
+}
+
+/**
+ * Gets $content array and call $dispatcher for each item
+ * regarding $order array
+ */
+function tpl_dispatch_ordered_content ($order, $content, $dispatcher) {
+
     // process contents by given order
-    foreach($sb_order as $sb) {
-        if(in_array($sb,$sb_content)) {
-            $key = array_search($sb,$sb_content);
-            unset($sb_content[$key]);
-            tpl_sidebar_dispatch($sb,$pos);
+    foreach($order as $item) {
+        if(in_array($item,$content)) {
+            $key = array_search($item,$content);
+            unset($content[$key]);
+            $dispatcher($item);
         }
     }
 
     // check for left content not specified by order
-    if(is_array($sb_content) && !empty($sb_content) > 0) {
-        foreach($sb_content as $sb) {
-            tpl_sidebar_dispatch($sb,$pos);
+    if(is_array($content) && !empty($content) > 0) {
+        foreach($content as $item) {
+            $dispatcher($item);
         }
     }
+}
+
+/**
+ * Wrapper for tpl_sidebar_dispatch with param pos=left
+ */
+function tpl_sidebar_dispatch_left ($sb) {
+	tpl_sidebar_dispatch($sb, 'left');
+}
+
+/**
+ * Wrapper for tpl_sidebar_dispatch with param pos=right
+ */
+function tpl_sidebar_dispatch_right ($sb) {
+	tpl_sidebar_dispatch($sb, 'right');
 }
 
 /**
