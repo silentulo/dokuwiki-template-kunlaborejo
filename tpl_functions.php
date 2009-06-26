@@ -208,17 +208,14 @@ function tpl_sidebar_dispatch($sb,$pos) {
             break;
         
         case 'toolbox':
-            $actions = array('admin', 'edit', 'history', 'recent', 'backlink', 'subscribe', 'subscribens', 'index', 'login', 'profile');
+            $act_content = explode(',', tpl_getConf('toolbox_content'));
+            $act_order = explode(',', tpl_getConf('toolbox_order'));
 
             print '<div class="toolbox_sidebar sidebar_box">' . DOKU_LF;
             print '<h1>' . $lang['kunlaborejo_toolbox'] . '</h1>' . DOKU_LF;
             print '  <div class="level1">' . DOKU_LF;
             print '    <ul>' . DOKU_LF;
-
-            foreach($actions as $action) {
-                tpl_dispatch_toolbox_item ($action);
-            }
-
+            tpl_dispatch_ordered_content ($act_order, $act_content, "tpl_dispatch_toolbox_item");
             print '    </ul>' . DOKU_LF;
             print '  </div>' . DOKU_LF;
             print '</div>' . DOKU_LF;
