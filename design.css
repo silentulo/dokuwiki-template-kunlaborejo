@@ -75,8 +75,12 @@ a.wikilink2 {
 #logo img {
 }
 
-#userinfo, #login__top {
+#userinfo #actions, #login__top {
 	font-size: 90%;
+}
+
+#userinfo #fn {
+	font-size: 100%
 }
 
 #breadcrumbs {

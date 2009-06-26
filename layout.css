@@ -43,6 +43,10 @@ html, body {
 	float: right;
 }
 
+#userinfo #fn, #userinfo #actions {
+	text-align: right;
+}
+
 #breadcrumbs {
 	margin-bottom: 1.4em;
 }

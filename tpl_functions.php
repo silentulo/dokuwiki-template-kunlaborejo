@@ -378,12 +378,30 @@ function tpl_sidebar_hide() {
  */
 function tpl_login_dialog() {
 	global $ID;
+	global $INFO;
 	global $lang;
-	print '<div id="login__top">' . DOKU_LF;
-	tpl_actionlink('login');
-	print ' • ' . DOKU_LF;
-    print '<a href="'.wl($ID,'do=register').'" rel="nofollow" class="wikilink1">'.$lang['kunlaborejo_register'].'</a>';
-	print '</div>' . DOKU_LF;
+	if ($INFO['userinfo']) {
+		print '<div id="userinfo">' . DOKU_LF;
+
+        // TODO: insert avatar
+
+        print '<div id="fn">' . DOKU_LF;
+        print $INFO['userinfo']['name'];
+        print '</div>';
+
+        print '<div id="actions">' . DOKU_LF;
+		tpl_actionlink('profile');
+		print ' • ' . DOKU_LF;
+		tpl_actionlink('login');
+
+		print '</div></div>' . DOKU_LF;
+	} else {
+		print '<div id="login__top">' . DOKU_LF;
+		tpl_actionlink('login');
+		print ' • ' . DOKU_LF;
+	    print '<a href="'.wl($ID,'do=register').'" rel="nofollow" class="wikilink1">'.$lang['kunlaborejo_register'].'</a>';
+		print '</div>' . DOKU_LF;
+	}
 }
 
 // vim:ts=4:sw=4:et:enc=utf-8:
