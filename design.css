@@ -151,6 +151,12 @@ a.wikilink2 {
 	border-bottom: 0.1px solid #888;
 }
 
+.sidebar_box h1 a, .sidebar_box h1 a:hover, .sidebar_box h1 a:active,
+.sidebar_box h2 a, .sidebar_box h2 a:hover, .sidebar_box h2 a:active {
+	color: #000;
+	text-decoration: none;
+}
+
 .toc_close, .toc_open {
 	float: right;
 }
