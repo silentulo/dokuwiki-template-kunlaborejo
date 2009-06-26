@@ -87,14 +87,22 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
     
     <div class="site">
       <div id="left_sidebar">
-        <?php if(tpl_getConf('search') == 'left') tpl_searchform() ?>
+        <?php if(tpl_getConf('search') == 'left') { ?>
+          <div class="sidebar_box search_sidebar">
+            <?php tpl_searchform() ?>
+          </div>
+        <?php } ?>
         <?php tpl_sidebar('left') ?>
       </div>
       <div id="page">
         <?php ($notoc) ? tpl_content(false) : tpl_content() ?>
       </div>
       <div id="right_sidebar">
-        <?php if(tpl_getConf('search') == 'right') tpl_searchform() ?>
+        <?php if(tpl_getConf('search') == 'right') { ?>
+          <div class="sidebar_box search_sidebar">
+            <?php tpl_searchform() ?>
+          </div>
+        <?php } ?>
         <?php tpl_sidebar('right') ?>
       </div>
     </div>

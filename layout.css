@@ -83,6 +83,9 @@ html, body {
     float: right;
 }
 
+form#dw__search input.edit {
+}
+
 /* --------------- sidebars --------------------*/
 #left_sidebar {
   float: left;

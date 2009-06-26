@@ -189,15 +189,18 @@ a.wikilink2 {
 form#dw__search{
   margin-bottom: 0.2em;
   display: block;
-  font-size: 100%;
 }
 
 form#dw__search input.edit {
-  display: inline;
-  font-size: 80%;
+	display: inline;
+	width: 62%;
+    font-size: 80%;
 }
 
 form#dw__search input.button {
+	display: inline;
+	width: 30%;
+    font-size: 80%;
 }
 
 
@@ -211,7 +214,6 @@ div.ajax_qsearch {
   border-left: none;
   border-top: none;
   border-right: none;
-  font-size: 85%;
   float: left;
   width: 96%;
   margin: 0.2em 0 0.5em 0;
@@ -221,7 +223,6 @@ div#bar__top div.ajax_qsearch {
   position: absolute;
   right: 100px;;
   width: 200px;
-  font-size: 85%;
   display: none;
   border: 1px solid __border__;
   background: __background__;
@@ -232,7 +233,7 @@ div#bar__top div.ajax_qsearch {
 }
 
 div.ajax_qsearch strong {
-  font-size: 100%;
+//  font-size: 100%;
   background: __background_alt__;
   padding: 0.2em;
   display: block;
