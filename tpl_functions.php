@@ -230,6 +230,14 @@ function tpl_sidebar_dispatch($sb,$pos) {
             print '</div>' . DOKU_LF;
             break;
 
+        case 'translation':
+            print '<div class="translation_sidebar sidebar_box">' . DOKU_LF;
+            print '  <h1>'.$lang['kunlaborejo_translations'].'</h1>' . DOKU_LF;
+			$translation = &plugin_load('syntax','translation');
+			echo $translation->_showTranslations();
+            print '</div>' . DOKU_LF;
+            break;
+
         case 'extra':
             print '<div class="extra_sidebar sidebar_box">' . DOKU_LF;
             @include(dirname(__FILE__).'/' . $pos .'_sidebar.html');

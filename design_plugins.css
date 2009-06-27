@@ -18,3 +18,20 @@
 .comment_subscribe label.block {
 	display: inline !important;
 }
+
+/* ------------- translations ---------------------- */
+div.plugin_translation>span {
+	display: none;
+}
+
+div.plugin_translation li {
+	display: inline;
+}
+
+div.plugin_translation div.li {
+	display: inline;
+}
+
+div.plugin_translation span.curid {
+	font-weight: bold;
+}

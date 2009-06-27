@@ -5,6 +5,7 @@
  */
 
 $lang['kunlaborejo_toolbox']     = "Agilaro";
+$lang['kunlaborejo_translations']     = "Tradukoj";
 
 $lang['kunlaborejo_about']	     = 'Pri ni';
 $lang['kunlaborejo_projects']    = 'Projektoj';
