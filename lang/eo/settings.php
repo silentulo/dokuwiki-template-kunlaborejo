@@ -8,6 +8,7 @@
 $lang['sidebar']                        = "En kiu(j) flanko(j) estos ligilaroj";
 $lang['pagename']                       = "Paĝnomo por flankaj ligilaroj";
 $lang['trace']                          = "Ĉu uzi lokigajn ligilojn (Trace)";
+$lang['main_sidebar_always']			= "Montru cxefan flankan ligilaron en cxiuj pagxoj";
 $lang['wiki_actionlinks']               = "Stilo de la agligiloj (Actionlink)";
 $lang['user_sidebar_namespace']         = "Nomspaco por flankaj ligilaroj de uzuloj";
 $lang['group_sidebar_namespace']        = "Nomspaco por flankaj ligilaroj de grupoj";
