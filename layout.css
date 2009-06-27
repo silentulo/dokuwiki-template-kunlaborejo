@@ -31,16 +31,19 @@ html, body {
 
 /* -------------- header -------------------*/
 #header {
-//	height: 4.2em;
 	padding-top: 0.5em;
 }
 
 #logo {
-	float: left;
+    position: absolute;
+    left: 2em;
+    top: 0.5em;
 }
 
 #userinfo, #login__top {
-	float: right;
+	position: absolute;
+	right: 2em;
+	top: 0.5em;
 }
 
 #userinfo #fn, #userinfo #actions {
