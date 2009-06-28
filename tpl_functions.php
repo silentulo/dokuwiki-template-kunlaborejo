@@ -153,7 +153,7 @@ function tpl_sidebar_dispatch($sb,$pos) {
             $user_ns = tpl_getConf('user_sidebar_namespace');
             if(isset($INFO['userinfo']['name'])) {
                 $user = $_SERVER['REMOTE_USER'];
-                $user_sb = $user_ns . ':' . $user . ':' . $pname;
+                $user_sb = _getTransSb($user_ns . ':' . $user . ':' . $pname);
                 if(@file_exists(wikiFN($user_sb))) {
                     $subst = array('pattern' => array('/@USER@/'), 'replace' => array($user));
                     print '<div class="user_sidebar sidebar_box">' . DOKU_LF;
