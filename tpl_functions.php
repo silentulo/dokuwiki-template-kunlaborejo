@@ -356,10 +356,17 @@ function _getNsSb($id) {
     $pname = tpl_getConf('pagename');
     $ns_sb = '';
     $path  = explode(':', $id);
+    $trans_ns = _getTransNs();
     $found = false;
 
     while(count($path) > 0) {
-        $ns_sb = implode(':', $path).':'.$pname;
+        $cur_ns = implode(':', $path) . ':';
+
+        // don't check if cur_ns = trans_ns
+        if ($cur_ns == $trans_ns) break;
+
+        // check sidebar in this ns
+        $ns_sb = $cur_ns.$pname;
         if(@file_exists(wikiFN($ns_sb))) return $ns_sb;
         array_pop($path);
     }
