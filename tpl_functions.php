@@ -125,8 +125,8 @@ function tpl_sidebar_dispatch($sb,$pos) {
     switch($sb) {
 
         case 'main':
-            $main_sb = $pname;
-            if(@file_exists(wikiFN($main_sb)) && auth_quickaclcheck($main_sb) >= AUTH_READ) {
+            $main_sb = _getTransSb($pname);
+            if($main_sb && auth_quickaclcheck($main_sb) >= AUTH_READ) {
                 $always = tpl_getConf('main_sidebar_always');
                 if($always or (!$always && !getNS($ID))) {
                     print '<div class="main_sidebar sidebar_box">' . DOKU_LF;
@@ -287,6 +287,7 @@ function tpl_dispatch_toolbox_item ($action) {
     }
 }
 
+
 /**
  * Removes the TOC of the sidebar pages and 
  * shows a edit button if the user has enough rights
@@ -364,6 +365,44 @@ function _getNsSb($id) {
     
     // nothing found
     return false;
+}
+
+/**
+ * Try to get translated version of sidebar
+ */
+function _getTransSb($sb) {
+	$trans_ns = _getTransNs();
+
+	// check for translated sidebar
+	if ($trans_ns) {
+		$res_sb = $trans_ns . $sb;
+		if (@file_exists(wikiFN($res_sb))) return $res_sb;
+	}
+
+	// check for untranslated sidebar
+	if (@file_exists(wikiFN($sb))) return $sb;
+
+	// neither exists
+	return false;
+}
+
+/**
+ * Returns namespace used for current translation
+ *
+ * TODO test how param 'translationns' works
+ */
+function _getTransNs() {
+	global $conf;
+
+    $trans = strtolower(str_replace(',',' ',$conf['plugin']['translation']['translations']));
+    $trans = array_unique(array_filter(explode(' ',$trans)));
+	$cur = $conf['lang'];
+
+	if (in_array($cur, $trans)) {
+		$prefix = cleanID($conf['plugin']['translation']['translationns']);
+		if ($prefix) $prefix .= ':';
+		return $prefix . $cur . ':';
+	}
 }
 
 /**
