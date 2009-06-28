@@ -42,7 +42,6 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
 <?php /*old includehook*/ @include(dirname(__FILE__).'/topheader.html')?>
 <div id="dokuwiki">
 
-    <?php html_msgarea()?>
 
   <div id="header">
     <div class="site">
@@ -93,6 +92,7 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
         <?php tpl_sidebar('left') ?>
       </div>
       <div id="page">
+        <?php html_msgarea()?>
         <?php ($notoc) ? tpl_content(false) : tpl_content() ?>
       </div>
       <div id="right_sidebar">
