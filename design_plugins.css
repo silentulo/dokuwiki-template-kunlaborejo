@@ -19,6 +19,12 @@
 	display: inline !important;
 }
 
+.comment_buttons {
+	text-align: right;
+	font-size: 70%;
+	margin: -1.4em 0em 1.4em;
+}
+
 /* ------------- translations ---------------------- */
 div.plugin_translation>span {
 	display: none;
